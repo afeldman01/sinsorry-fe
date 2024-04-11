@@ -6,7 +6,7 @@ export default function Home() {
       <header id="header">
         <div className="inner">
  
-            <a href="index.html" className="logo">
+            <a href="/" className="logo">
               <span className="symbol"><img src="images/logo.svg" alt="" /></span><span className="title">SinSorry</span>
             </a>
           
@@ -23,10 +23,10 @@ export default function Home() {
             
             <h2>Cracking the Code: Solve a Puzzle, Win an NFT on Solana!</h2> 
             <p>
-Welcome to a cipher not of letters, but of senses! Systethesia is a neurological condition where stimulation in one sense triggers experiences in another. Today, we'll explore a cryptogram based on aesthetiac synesthesia, where letters and numbers evoke specific colors.
+Welcome to a cipher not of letters, but of senses! Systethesia is a neurological condition where stimulation in one sense triggers experiences in another. Today, we will explore a cryptogram based on aesthetiac synesthesia, where letters and numbers evoke specific colors.
 </p>
 <p>
-Prepare to flex your mental muscles and potentially snag a coveted Solana NFT by conquering a cryptic challenge. Here's the lowdown:
+Prepare to flex your mental muscles and potentially snag a coveted Solana NFT by conquering a cryptic challenge. Here is the lowdown:
 </p>
 
 <h2>The Challenge</h2>
