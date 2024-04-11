@@ -1,10 +1,5 @@
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import {
-  ConnectionProvider,
-  useConnection,
-  useWallet,
-  WalletProvider,
-} from "@solana/wallet-adapter-react";
+import { ConnectionProvider, useWallet, WalletProvider } from "@solana/wallet-adapter-react";
 import {
   WalletDisconnectButton,
   WalletModalProvider,
@@ -17,9 +12,12 @@ import React, { FC, useMemo } from "react";
 require("@solana/wallet-adapter-react-ui/styles.css");
 
 const ShowPublicKey = (args: any) => {
-  const { connection } = useConnection();
+  //const { connection } = useConnection();
   const { publicKey, wallet } = useWallet();
-  args.sendKey(publicKey, wallet);
+
+  if (args.sendKey) {
+    args?.sendKey(publicKey, wallet);
+  }
   return <></>;
 };
 
@@ -45,10 +43,8 @@ export const Wallet: FC = (args: any) => {
        * in the npm package `@solana/wallet-adapter-wallets`.
        */
     ],
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [network],
   );
-
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
