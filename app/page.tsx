@@ -1,3 +1,50 @@
+'use client'
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+import { Wallet } from './components/wallet';
+const spanStyle = {
+  padding: '0px',
+  background: 'transparent',
+  color: '#000000'
+}
+
+const divStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundSize: 'cover',
+  height: '400px'
+}
+const slideImages = [
+  {
+    url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80', 
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80', 
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80', 
+  },
+];
+
+const Slideshow = () => {
+  return (
+    <div className="slide-container">
+      <Slide>
+       {slideImages.map((slideImage, index)=> (
+          <div key={index}>
+            <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+             
+            </div>
+          </div>
+        ))} 
+      </Slide>
+      <br />
+      <p style={{ textAlign: 'center'}}>Past winners</p>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <body>
@@ -9,17 +56,22 @@ export default function Home() {
             <a href="/" className="logo">
               <span className="symbol"><img src="images/logo.svg" alt="" /></span><span className="title">SinSorry</span>
             </a>
-          
-
+            <div className='wallet' suppressHydrationWarning={true}>
+            <Wallet />
+            </div>
         </div>
       </header>
  
  
       <div id="main">
         <div className="inner">
+        <div className='slideShow'>
+              { Slideshow() }
+            </div>
           <header>
+
             <h1>This is SinSorry</h1>
-            <p>A Systethetic Cryptogram</p><p>
+            <p>A Systethetic Cryptogram</p> 
             
             <h2>Cracking the Code: Solve a Puzzle, Win an NFT on Solana!</h2> 
             <p>
@@ -32,14 +84,14 @@ Prepare to flex your mental muscles and potentially snag a coveted Solana NFT by
 <h2>The Challenge</h2>
 <p>
 Solve the brain teaser correctly, and you will be the lucky winner of a unique NFT on the Solana blockchain based on your puzzle. You will be the sole owner of this NFT and it will unlock new features in this website.</p>
-</p>
+ 
 <p>Below are 12 colored squares, each will contain a unique puzzle created just for you.</p>
-<p>Here is the gist of it: 
+<p>Here is the gist of it: </p>
   <ul>
     <li>Once you start a puzzle the game will be locked until you solve it.</li>
     <li>If you solve a puzzle you will receive a NFT, this is your key to unlock the next puzzle.</li>
     <li>Once you unlock all 12 puzzles you receive a special prize.</li>
-    </ul> </p>
+    </ul> 
 
           </header>
           <section className="tiles">

@@ -2829,7 +2829,15 @@ input, select, textarea {
 		}
 
 /* Header */
-
+.wallet {
+	position: relative;
+	float: right;
+}
+		.slideShow   {  position: relative;
+		width: 30%;
+		float: right;
+		padding: 2em;
+		}
 	#header {
 		padding: 2em 0 0.1em 0 ;
 	}
