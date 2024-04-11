@@ -19,7 +19,28 @@ export default function Home() {
         <div className="inner">
           <header>
             <h1>This is SinSorry</h1>
-            <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
+            <p>A Systethetic Cryptogram</p><p>
+            
+            <h2>Cracking the Code: Solve a Puzzle, Win an NFT on Solana!</h2> 
+            <p>
+Welcome to a cipher not of letters, but of senses! Systethesia is a neurological condition where stimulation in one sense triggers experiences in another. Today, we'll explore a cryptogram based on aesthetiac synesthesia, where letters and numbers evoke specific colors.
+</p>
+<p>
+Prepare to flex your mental muscles and potentially snag a coveted Solana NFT by conquering a cryptic challenge. Here's the lowdown:
+</p>
+
+<h2>The Challenge</h2>
+<p>
+Solve the brain teaser correctly, and you will be the lucky winner of a unique NFT on the Solana blockchain based on your puzzle. You will be the sole owner of this NFT and it will unlock new features in this website.</p>
+</p>
+<p>Below are 12 colored squares, each will contain a unique puzzle created just for you.</p>
+<p>Here is the gist of it: 
+  <ul>
+    <li>Once you start a puzzle the game will be locked until you solve it.</li>
+    <li>If you solve a puzzle you will receive a NFT, this is your key to unlock the next puzzle.</li>
+    <li>Once you unlock all 12 puzzles you receive a special prize.</li>
+    </ul> </p>
+
           </header>
           <section className="tiles">
             <article className="style1">
