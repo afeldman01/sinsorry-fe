@@ -1,7 +1,6 @@
 import React, { FC, useMemo } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
-import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
-import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
+import { WalletAdapterNetwork } from '@solana/wallet-adapter-base'; 
 import {
     WalletModalProvider,
     WalletDisconnectButton,
@@ -32,8 +31,7 @@ export const Wallet: FC = () => {
              * If you wish to support a wallet that supports neither of those standards,
              * instantiate its legacy wallet adapter here. Common legacy adapters can be found
              * in the npm package `@solana/wallet-adapter-wallets`.
-             */
-            new UnsafeBurnerWalletAdapter(),
+             */ 
         ],
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [network]

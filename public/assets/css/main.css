@@ -2462,10 +2462,8 @@ input, select, textarea {
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
-		font-weight: 900;
-		height: 3.5em;
-		letter-spacing: 0.35em;
-		line-height: 3.45em;
+		font-weight: 900; 
+		letter-spacing: 0.35em; 
 		overflow: hidden;
 		padding: 0 1.25em 0 1.6em;
 		text-align: center;
@@ -2562,6 +2560,10 @@ input, select, textarea {
 			pointer-events: none;
 			opacity: 0.25;
 		}
+
+		button.nav.default-nav {
+			display: none;
+		} 
 
 /* Tiles */
 
