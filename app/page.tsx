@@ -101,7 +101,7 @@ export default function Home() {
                 <h1>This is SinSorry</h1>
                 <p>A Systethetic Cryptogram</p>
 
-                <h2>Cracking the Code: Solve a Puzzle, Win an NFT on Solana!</h2>
+                <h2>Cracking the Code: Solve a Puzzle, Win NFTs and more on Solana!</h2>
                 <p>
                   Welcome to a cipher not of letters, but of senses! Systethesia is a neurological
                   condition where stimulation in one sense triggers experiences in another. Today,
@@ -117,21 +117,33 @@ export default function Home() {
                 <p>
                   Here is the lowdown: solve the brain teaser correctly, and you will be the lucky
                   winner of a unique NFT on the Solana blockchain based on your puzzle. You will be
-                  the sole owner of this NFT and it will unlock new features in this website.
+                  the sole owner of this NFT and it will unlock new features in this website. Once
+                  you solve all our puzzles you will unlock a hidden wallet containing a percentage
+                  of the available supply of our native token $SIN-SES. The more you win, the more
+                  you get. However, as each winner takes a percentage the supply will reduce and the
+                  next winner will receive less. In other words, it pays more to win fast.
+                </p>
+
+                <p>
+                  Each game is unique to your wallet and you can play as many times as you like. The
+                  puzzles will become increasing difficult and the final puzzle will only allow
+                  limited guesses before locked and unsolvable. If you need to reset the game you
+                  can surrender, however, the next game will only be available in 24 hours.
                 </p>
 
                 <p>
                   Below are 12 colored squares, each will contain a unique puzzle created just for
                   you.
                 </p>
-                <p>Here is the gist of it: </p>
                 <ul>
                   <li>Once you start a puzzle the game will be locked until you solve it.</li>
                   <li>
                     If you solve a puzzle you will receive a NFT, this is your key to unlock the
                     next puzzle.
                   </li>
-                  <li>Once you unlock all 12 puzzles you receive a special prize.</li>
+                  <li>
+                    Once you unlock all 12 puzzles you receive a free stake in our native coin.
+                  </li>
                 </ul>
               </header>
               <section>
