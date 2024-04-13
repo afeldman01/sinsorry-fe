@@ -15,13 +15,13 @@ const divStyle = {
 };
 const slideImages = [
   {
-    url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    url: "https://copper-far-goat-344.mypinata.cloud/ipfs/QmWzpNdaz8BcyoFkKCu4fiswGBkEM8Nz9jUdWgY82WFivm",
   },
   {
-    url: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+    url: "https://copper-far-goat-344.mypinata.cloud/ipfs/QmPboUrbpk83T1QHSDmfeJo3s1LT8DQ4V9D5sBoeNPMEK9",
   },
   {
-    url: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    url: "https://copper-far-goat-344.mypinata.cloud/ipfs/QmYbBa4hJxKu9cEGDtPy44ernVLFVysVrxnhjGSB8Mtqo2",
   },
 ];
 
