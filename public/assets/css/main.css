@@ -2785,7 +2785,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
+			.slideShow {
+				display: none;
+			}
 			.tiles {
 				margin: -2.5em 0 0 -2.5em;
 			}
@@ -3256,7 +3258,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
+			.slideShow {
+				display: none;
+			}
 			#footer > .inner section:nth-child(1) {
 				width: 66%;
 				margin-right: 0;
@@ -3270,7 +3274,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			.slideShow {
+				display: none;
+			}
 			#footer {
 				padding: 3em 0 1em 0 ;
 			}
@@ -3304,7 +3310,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			.slideShow {
+				display: none;
+			}
 			#footer > .inner .copyright {
 				margin-top: 3em;
 			}
@@ -3333,7 +3341,9 @@ input, select, textarea {
 	}
 
 		@media screen and (max-width: 736px) {
-
+			.slideShow {
+				display: none;
+			}
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
 			}

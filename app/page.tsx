@@ -96,8 +96,8 @@ export default function Home() {
 
           <div id="main">
             <div className="inner">
-              <div className="slideShow">{Slideshow()}</div>
               <header>
+                <div className="slideShow">{Slideshow()}</div>
                 <h1>This is SinSorry</h1>
                 <p>A Systethetic Cryptogram</p>
 
