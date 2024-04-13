@@ -36,7 +36,7 @@ const Slideshow = () => {
         ))}
       </Slide>
       <br />
-      <p style={{ textAlign: "center" }}>Past winners</p>
+      <p style={{ textAlign: "center" }}>Sample puzzles</p>
     </div>
   );
 };
