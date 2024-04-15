@@ -88,9 +88,6 @@ export default function Home() {
                 </span>
                 <span className="title">SinSorry</span>
               </a>
-              <div className="wallet" suppressHydrationWarning={true}>
-                <Wallet {...data} />
-              </div>
             </div>
           </header>
 
@@ -147,6 +144,9 @@ export default function Home() {
                 </ul>
               </header>
               <section>
+                <div className="wallet" suppressHydrationWarning={true}>
+                  <Wallet {...data} />
+                </div>
                 <a href={`${solScan}/${address}`} target="new">
                   View my profile on Solscan
                 </a>
