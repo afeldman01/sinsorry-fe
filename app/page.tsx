@@ -98,12 +98,7 @@ const renderHome = () => {
               </li>
               <li>Once you unlock all 12 puzzles you receive a free stake in our native coin.</li>
             </ul>
-          </header>
-          <section>
-            <a href={`${solScan}/${address}`} target="new">
-              View my profile on Solscan
-            </a>
-          </section>
+          </header> 
           <section className="tiles">
             <article className="style1">
               <span className="image">
