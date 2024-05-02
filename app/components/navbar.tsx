@@ -1,6 +1,6 @@
 import { Menu } from "./menu";
 
-export default function Navbar({ children }: any) {
+export default function Navbar() {
   const menuItems = [
     { href: "/networks", name: "networks" },
     { href: "/rewards", name: "rewards" },

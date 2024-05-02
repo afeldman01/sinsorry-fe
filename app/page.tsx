@@ -1,8 +1,6 @@
 "use client";
-import react from "react";
 import { Slide } from "react-slideshow-image";
 
-import { Menu } from "../app/components/menu";
 import { apiHelper } from "./utils/api";
 import "./globals.css";
 import "react-slideshow-image/dist/styles.css";
@@ -16,10 +14,6 @@ const divStyle = {
 };
 
 const renderHome = () => {
-  const [publicKey, setPublicKey] = react.useState();
-  const [wallet, setWallet] = react.useState({});
-  const [address, setAddress] = react.useState("");
-  const [game, setGame] = react.useState();
   const solScan = "https://solscan.io/account/";
 
   const slideImages = [
@@ -51,29 +45,9 @@ const renderHome = () => {
 
   const onClickPlay = async (e: any) => {
     const { id } = e.currentTarget;
-    if (!publicKey || !wallet) {
-      alert("Wallet not connected");
-    } else {
-      const newGame = await apiHelper.post(`/v1/game/play/${id}`);
-      if (newGame?.id) {
-        setGame(newGame);
-      } else {
-        alert("Game was not created");
-      }
-    }
+    console.log(id)
   };
 
-  const sendKey = (key: any, wallet: any) => {
-    if (!publicKey && key) {
-      setPublicKey(key);
-      setWallet(wallet);
-      setAddress(key.toString());
-    }
-  };
-
-  const renderGame = () => {
-    return <>{game}</>;
-  };
   return (
     <main id="wrapper">
       <div id="main">

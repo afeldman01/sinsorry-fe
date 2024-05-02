@@ -1,4 +1,4 @@
-export default function Footer({ children }: any) {
+export default function Footer() {
   return (
     <footer id="footer">
       <div className="inner">
