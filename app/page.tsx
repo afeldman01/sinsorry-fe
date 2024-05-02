@@ -1,7 +1,6 @@
 "use client";
 import { Slide } from "react-slideshow-image";
 
-import { apiHelper } from "./utils/api";
 import "./globals.css";
 import "react-slideshow-image/dist/styles.css";
 
@@ -14,8 +13,6 @@ const divStyle = {
 };
 
 const renderHome = () => {
-  const solScan = "https://solscan.io/account/";
-
   const slideImages = [
     {
       url: "https://copper-far-goat-344.mypinata.cloud/ipfs/QmWzpNdaz8BcyoFkKCu4fiswGBkEM8Nz9jUdWgY82WFivm",
@@ -45,7 +42,7 @@ const renderHome = () => {
 
   const onClickPlay = async (e: any) => {
     const { id } = e.currentTarget;
-    console.log(id)
+    console.log(id);
   };
 
   return (
@@ -98,7 +95,7 @@ const renderHome = () => {
               </li>
               <li>Once you unlock all 12 puzzles you receive a free stake in our native coin.</li>
             </ul>
-          </header> 
+          </header>
           <section className="tiles">
             <article className="style1">
               <span className="image">
