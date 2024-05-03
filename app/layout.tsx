@@ -26,7 +26,7 @@ export default function Layout({ children }: any) {
         <link rel="stylesheet" href="assets/css/main.css" />
       </head>
       <body style={{ padding: 20 }}>
-        <GoogleAnalytics gaId="G-GQ7TFDFYTJ" />
+        <GoogleAnalytics gaId="G-975T6WJ8KT" />
         <Navbar />
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
         <Footer />
