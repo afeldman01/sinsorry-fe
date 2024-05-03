@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import NftType from "../components/nftType";
+import NftType from "../../components/nftType";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
