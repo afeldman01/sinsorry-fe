@@ -1,4 +1,5 @@
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Metadata } from "next";
 
 import Footer from "./components/footer";
@@ -25,6 +26,7 @@ export default function Layout({ children }: any) {
         <link rel="stylesheet" href="assets/css/main.css" />
       </head>
       <body style={{ padding: 20 }}>
+        <GoogleAnalytics gaId="G-GQ7TFDFYTJ" />
         <Navbar />
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
         <Footer />
