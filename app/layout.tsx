@@ -22,16 +22,17 @@ export default function Layout({ children }: any) {
           name="keywords"
           content="CRACKING THE CODE: SOLVE A PUZZLE, WIN AN NFT ON SOLANA!"
         ></meta>
-        <link rel="stylesheet" href="assets/css/main.css" />
       </head>
-      <body style={{ padding: 20 }}>
+      <body>
         <GoogleAnalytics gaId="G-975T6WJ8KT" />
         <Navbar />
         <div className="container mx-auto pb-40">
           {children}
-        </div>        
-        <Footer />
+        </div>     
+      <Footer />
+
       </body>
+
     </html>
   );
 }

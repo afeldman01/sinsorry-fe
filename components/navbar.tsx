@@ -1,24 +1,39 @@
-import { Menu } from "./menu";
+import Link from "next/link";
 
 export default function Navbar() {
-  const menuItems = [
-    { href: "/networks", name: "networks" },
-    { href: "/rewards", name: "rewards" },
-    { href: "/about", name: "about" },
-    { href: "/admin", name: "nft generator" },
-  ];
 
   return (
-    <header id="header">
-      <div className="inner">
-        <a href="/" className="logo">
-          <span className="symbol">
-            <img style={{ height: 30, width: 30 }} src="images/logo.jpeg" alt="" />
-          </span>
-          <span className="title">SinSorry</span>
-        </a>
-        <Menu items={menuItems} />
+    <div className="navbar bg-base-100">
+      <div className="flex-1">
+
+        <Link href="/">
+          <aside className="items-center grid-flow-col">
+            <div className="btn btn-ghost  avatar">
+              <div className="w-10 ">
+                <img src="images/logo.jpeg" alt="" />
+              </div>
+              <p className="text-xl">SinSorry</p>
+            </div>
+
+          </aside>
+        </Link>
       </div>
-    </header>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li><Link href="/about">About</Link></li>
+          {/* <li>
+            <details>
+              <summary>
+                Parent
+              </summary>
+              <ul className="p-2 bg-base-100 rounded-t-none">
+                <li><Link href="/about"></Link></li>
+                <li><Link href="/about"></Link></li>
+              </ul>
+            </details>
+          </li> */}
+        </ul>
+      </div>
+    </div>
   );
 }
