@@ -1,14 +1,5 @@
 "use client";
 
-
-const divStyle = {
-  alignItems: "center",
-  backgroundSize: "cover",
-  display: "flex",
-  height: "400px",
-  justifyContent: "center",
-};
-
 const renderHome = () => {
   const slideImages = [
     {
@@ -22,10 +13,9 @@ const renderHome = () => {
     },
   ];
 
-
   function Slideshow() {
     return (
-      <div >
+      <div>
         <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
           {slideImages.map((slideImage, index) => (
             <div className="carousel-item w-full" key={index}>
@@ -37,7 +27,7 @@ const renderHome = () => {
         <p>Sample puzzles</p>
       </div>
     );
-  };
+  }
 
   return (
     <div id="main">
@@ -46,10 +36,11 @@ const renderHome = () => {
           <article className="max-w-md md:max-w-none prose mx-auto lg:prose-xl px-4 mt-10">
             <div className=" col-span-4  grid grid-cols-1 md:grid-cols-2 gap-4" id="cardContainer">
               <div className=" text-center md:mt-52">
-                <h1>This is SinSorry:<br />A Systethetic Cryptogram</h1>
-                <p>
-                  Cracking the Code: Solve a Puzzle, Win NFTs and more on Polygon or Solana!
-                </p>
+                <h1>
+                  This is SinSorry:
+                  <br />A Systethetic Cryptogram
+                </h1>
+                <p>Cracking the Code: Solve a Puzzle, Win NFTs and more on Polygon or Solana!</p>
               </div>
               <div className="text-center">
                 <Slideshow />
@@ -98,9 +89,7 @@ const renderHome = () => {
               <li>Once you unlock all 12 puzzles you receive a free stake in our native coin.</li>
             </ul>
           </article>
-
         </header>
-
       </div>
     </div>
   );
