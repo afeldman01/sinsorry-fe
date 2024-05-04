@@ -1,27 +1,30 @@
-"use client";
-import { createRef, useRef, useState } from "react";
-
-export const Menu = ({ items }: any) => {
-  const $items = useRef(items.map(createRef));
-  const [active, setActive] = useState(0);
-
+export const Menu = () => {
   return (
-    <div style={{ float: "left", left: "50%", position: "absolute", top: 0 }}>
-      <div className="menu" style={{ position: "absolute", top: 30, width: 800 }}>
-        {items.map((item: any, index: number) => (
-          <a
-            key={item.name}
-            style={{ padding: 20 }}
-            ref={$items.current[index]}
-            className={`item ${active === index ? "active" : ""}`}
-            onMouseEnter={() => {
-              setActive(index);
-            }}
-            href={item.href}
-          >
-            {item.name}
-          </a>
-        ))}
+    <div className="navbar bg-base-100">
+      <div className="flex-1">
+        <a className="btn btn-ghost text-xl" href="/">
+          <span className="symbol">
+            <img style={{ height: 30, width: 30 }} src="images/logo.jpeg" alt="" />
+          </span>
+          <span className="title">SinSorry</span>
+        </a>
+      </div>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <details>
+              <summary>Menu</summary>
+              <ul className="p-2 bg-base-100 rounded-t-none">
+                <li>
+                  <a>About</a>
+                </li>
+                <li>
+                  <a href="/admin">NFT Generator</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
       </div>
     </div>
   );

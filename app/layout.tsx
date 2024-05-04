@@ -23,7 +23,6 @@ export default function Layout({ children }: any) {
           name="keywords"
           content="CRACKING THE CODE: SOLVE A PUZZLE, WIN AN NFT ON SOLANA!"
         ></meta>
-        <link rel="stylesheet" href="assets/css/main.css" />
       </head>
       <body style={{ padding: 20 }}>
         <GoogleAnalytics gaId="G-975T6WJ8KT" />

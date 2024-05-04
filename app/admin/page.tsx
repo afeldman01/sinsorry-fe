@@ -1,36 +1,36 @@
 "use client";
 
-import {
-  Button,
-  FormControl,
-  FormLabel,
-  Grid,
-  Paper,
-  styled,
-  TextField,
-  Typography,
-} from "@mui/material";
-
-import NftType from "../components/nftType";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  color: theme.palette.text.secondary,
-  padding: theme.spacing(1),
-  textAlign: "center",
-}));
-
 export default function Page() {
   const renderGrid = () => {
     return (
-      <Grid container spacing={2}>
-        <Grid item xs={6}>
-          <Item>Upload an image</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>
-            <Typography variant="h3" gutterBottom textAlign={"left"}>
+      <div>
+        <div role="tablist" className="tabs tabs-boxed">
+          <a role="tab" className="tab">
+            Metadata
+          </a>
+          <a role="tab" className="tab tab-active">
+            Collection
+          </a>
+          <a role="tab" className="tab">
+            Mint
+          </a>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        {/* <Typography variant="h3" gutterBottom textAlign={"left"}>
               Create a NFT
             </Typography>
             <Typography variant="body1" gutterBottom textAlign={"left"}>
@@ -51,10 +51,8 @@ export default function Page() {
               <FormLabel>Royalties</FormLabel>
               <TextField></TextField>
               <Button>Next</Button>
-            </FormControl>
-          </Item>
-        </Grid>
-      </Grid>
+            </FormControl> */}
+      </div>
     );
   };
 
