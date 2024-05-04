@@ -18,14 +18,14 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="/about">Play the Game</a>
+            <Link href="/about">Play the Game</Link>
           </li>
 
           <li>
-            <a href="/admin">NFT</a>
+            <Link href="/admin">NFT</Link>
           </li>
           <li>
-            <a>Tokens</a>
+            <a className="disabled">Tokens</a>
           </li>
         </ul>
       </div>
