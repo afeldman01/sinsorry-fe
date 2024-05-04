@@ -1,9 +1,8 @@
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Metadata } from "next";
 
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,12 +23,16 @@ export default function Layout({ children }: any) {
           content="CRACKING THE CODE: SOLVE A PUZZLE, WIN AN NFT ON SOLANA!"
         ></meta>
       </head>
-      <body style={{ padding: 20 }}>
+      <body>
         <GoogleAnalytics gaId="G-975T6WJ8KT" />
         <Navbar />
-        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
-        <Footer />
+        <div className="container mx-auto pb-40">
+          {children}
+        </div>     
+      <Footer />
+
       </body>
+
     </html>
   );
 }
