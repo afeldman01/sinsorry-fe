@@ -1,11 +1,9 @@
 import Link from "next/link";
 
 export default function Navbar() {
-
   return (
     <div className="navbar bg-base-100">
-      <div className="flex-1">
-
+      <div className="navbar-start">
         <Link href="/">
           <aside className="items-center grid-flow-col">
             <div className="btn btn-ghost  avatar">
@@ -14,25 +12,25 @@ export default function Navbar() {
               </div>
               <p className="text-xl">SinSorry</p>
             </div>
-
           </aside>
         </Link>
       </div>
-      <div className="flex-none">
+      <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><Link href="/about">About</Link></li>
-          {/* <li>
-            <details>
-              <summary>
-                Parent
-              </summary>
-              <ul className="p-2 bg-base-100 rounded-t-none">
-                <li><Link href="/about"></Link></li>
-                <li><Link href="/about"></Link></li>
-              </ul>
-            </details>
-          </li> */}
+          <li>
+            <a href="/about">Play the Game</a>
+          </li>
+
+          <li>
+            <a href="/admin">NFT</a>
+          </li>
+          <li>
+            <a>Tokens</a>
+          </li>
         </ul>
+      </div>
+      <div className="navbar-end">
+        <a className="btn">Connect Wallet</a>
       </div>
     </div>
   );

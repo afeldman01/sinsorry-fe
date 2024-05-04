@@ -26,13 +26,9 @@ export default function Layout({ children }: any) {
       <body>
         <GoogleAnalytics gaId="G-975T6WJ8KT" />
         <Navbar />
-        <div className="container mx-auto pb-40">
-          {children}
-        </div>     
-      <Footer />
-
+        <div className="container mx-auto pb-40">{children}</div>
+        <Footer />
       </body>
-
     </html>
   );
 }
