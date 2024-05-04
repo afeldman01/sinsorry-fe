@@ -1,18 +1,18 @@
 export default function Page() {
   return (
-    <div className="flex-col md:flex-row" style={{ margin: "0 auto", width: "65%" }}>
-      <p className="prose lg:prose-xl">
+    <article className="max-w-md md:max-w-none prose mx-auto lg:prose-xl px-4 mt-10">
+    <p>
         Welcome to a cipher not of letters, but of senses! Systethesia is a neurological condition
         where stimulation in one sense triggers experiences in another. Today, we will explore a
         cryptogram based on aesthetiac synesthesia, where letters and numbers evoke specific colors.
       </p>
-      <p className="prose lg:prose-xl">
+      <p >
         Prepare to flex your mental muscles and potentially snag a coveted Solana NFT by conquering
         a cryptic challenge.
       </p>
 
-      <h2 className="text-3xl font-bold">The Challenge</h2>
-      <p className="prose lg:prose-xl">
+      <h2>The Challenge</h2>
+      <p >
         Here is the lowdown: solve the brain teaser correctly, and you will be the lucky winner of a
         unique NFT on the Solana blockchain based on your puzzle. You will be the sole owner of this
         NFT and it will unlock new features in this website. Once you solve all our puzzles you will
@@ -22,14 +22,14 @@ export default function Page() {
         win fast.
       </p>
 
-      <article className="prose  lg:prose-xl">
+      <p >
         Each game is unique to your wallet and you can play as many times as you like. The puzzles
         will become increasing difficult and the final puzzle will only allow limited guesses before
         locked and unsolvable. If you need to reset the game you can surrender, however, the next
         game will only be available in 24 hours.
-      </article>
+      </p>
 
-      <p className="prose lg:prose-xl">
+      <p >
         Below are 12 colored squares, each will contain a unique puzzle created just for you.
       </p>
       <ul>
@@ -39,6 +39,6 @@ export default function Page() {
         </li>
         <li>Once you unlock all 12 puzzles you receive a free stake in our native coin.</li>
       </ul>
-    </div>
+    </article>
   );
 }
