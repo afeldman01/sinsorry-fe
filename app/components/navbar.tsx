@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header id="header">
       <div className="inner">
-        <Menu items={menuItems} />
+        <Menu />
       </div>
     </header>
   );
