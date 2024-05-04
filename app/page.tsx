@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-
 const slideImages = [
   {
     url: "https://copper-far-goat-344.mypinata.cloud/ipfs/QmWzpNdaz8BcyoFkKCu4fiswGBkEM8Nz9jUdWgY82WFivm",
@@ -15,12 +14,8 @@ const slideImages = [
   },
 ];
 
-
-
-
 export default function Page() {
   const [isGame, setIsGame] = useState(false);
-
 
   const renderGame = () => {
     return (
@@ -34,7 +29,6 @@ export default function Page() {
   };
 
   const renderHome = () => {
-
     function Slideshow() {
       return (
         <div>
@@ -67,13 +61,15 @@ export default function Page() {
               </div>
             </div> */}
 
-
-              <div className="hero  bg-base-200" >
+              <div className="hero  bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
                   <Slideshow />
 
                   <div>
-                    <h1 className="text-5xl font-bold">This is SinSorry:<br/>A Systethetic Cryptogram </h1>
+                    <h1 className="text-5xl font-bold">
+                      This is SinSorry:
+                      <br />A Systethetic Cryptogram{" "}
+                    </h1>
                     <p className="py-6">
                       Cracking the Code: Solve a Puzzle, Win NFTs and more on Polygon or Solana!
                     </p>
@@ -98,23 +94,24 @@ export default function Page() {
               <h2>The Challenge</h2>
               <p>
                 Here is the lowdown: solve the brain teaser correctly, and you will be the lucky
-                winner of a unique NFT on the Solana blockchain based on your puzzle. You will be the
-                sole owner of this NFT and it will unlock new features in this website. Once you solve
-                all our puzzles you will unlock a hidden wallet containing a percentage of the
+                winner of a unique NFT on the Solana blockchain based on your puzzle. You will be
+                the sole owner of this NFT and it will unlock new features in this website. Once you
+                solve all our puzzles you will unlock a hidden wallet containing a percentage of the
                 available supply of our native token $SIN-SES. The more you win, the more you get.
-                However, as each winner takes a percentage the supply will reduce and the next winner
-                will receive less. In other words, it pays more to win fast.
+                However, as each winner takes a percentage the supply will reduce and the next
+                winner will receive less. In other words, it pays more to win fast.
               </p>
 
               <p>
                 Each game is unique to your wallet and you can play as many times as you like. The
-                puzzles will become increasing difficult and the final puzzle will only allow limited
-                guesses before locked and unsolvable. If you need to reset the game you can surrender,
-                however, the next game will only be available in 24 hours.
+                puzzles will become increasing difficult and the final puzzle will only allow
+                limited guesses before locked and unsolvable. If you need to reset the game you can
+                surrender, however, the next game will only be available in 24 hours.
               </p>
 
               <p>
-                Below are 12 colored squares, each will contain a unique puzzle created just for you.
+                Below are 12 colored squares, each will contain a unique puzzle created just for
+                you.
               </p>
               <ul>
                 <li>Once you start a puzzle the game will be locked until you solve it.</li>
