@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
-      <div className="navbar-start">
+      <div className="flex-1">
         <Link href="/">
           <aside className="items-center grid-flow-col">
             <div className="btn btn-ghost  avatar">
