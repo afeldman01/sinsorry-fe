@@ -2,17 +2,19 @@
 import { useEffect, useState } from "react";
 
 export default function CaptureMint() {
-  const [data, setData] = useState([0]);
+  const [data, setData] = useState([] as number[]);
 
   useEffect(() => {
-    const maxExponent = 15;
-    const exponents = [];
-    for (let currentExponent = 0; currentExponent < maxExponent; currentExponent++) {
-      exponents.push(Math.pow(2, currentExponent));
+    if(!data.length){ 
+        const maxExponent = 15;
+        const exponents = [];
+        for (let currentExponent = 0; currentExponent < maxExponent; currentExponent++) {
+        exponents.push(Math.pow(2, currentExponent));
+        }
+        console.log(exponents);
+        setData(exponents);
     }
-    console.log(exponents);
-    setData(exponents);
-  });
+  }, []);
 
   const renderOptions = () => {
     const options = data.map(item => {
