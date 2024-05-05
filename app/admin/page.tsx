@@ -1,34 +1,63 @@
 "use client";
 
+import { useState } from "react";
+
+import CaptureCollection from "@/components/nft/captureCollection";
+import CaptureGeneral from "@/components/nft/captureGeneral";
+import CaptureMetadata from "@/components/nft/captureMetadata";
+import CaptureMint from "@/components/nft/captureMint";
+
 export default function Page() {
+  const [selected, setSelectedTab] = useState(3);
   const renderGrid = () => {
     return (
       <div>
         <div role="tablist" className="tabs tabs-boxed">
-          <a role="tab" className="tab">
-            Metadata
+          <a
+            role="tab"
+            className={`tab ${selected == 3 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(3)}
+          >
+            General
           </a>
-          <a role="tab" className="tab tab-active">
-            Collection
+          <a
+            role="tab"
+            className={`tab ${selected == 1 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(1)}
+          >
+            Collection NFT
           </a>
-          <a role="tab" className="tab">
+          {/* <a
+            role="tab"
+            className={`tab ${selected == 0 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(0)}
+          >
+            NFT Metadata
+          </a> */}
+          <a
+            role="tab"
+            className={`tab ${selected == 2 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(2)}
+          >
             Mint
           </a>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
+        {/* metadata */}
+        <div className={`container mx-auto ${selected == 0 ? "" : "hidden"}`}>
+          <CaptureMetadata />
+        </div>
+        {/* collection */}
+        <div className={`container mx-auto ${selected == 1 ? "" : "hidden"}`}>
+          <CaptureCollection />
+        </div>
+        {/* mint */}
+        <div className={`container mx-auto ${selected == 2 ? "" : "hidden"}`}>
+          <CaptureMint />
+        </div>
+
+        {/* general */}
+        <div className={`container mx-auto ${selected == 3 ? "" : "hidden"}`}>
+          <CaptureGeneral />
         </div>
         {/* <Typography variant="h3" gutterBottom textAlign={"left"}>
               Create a NFT
