@@ -1,17 +1,50 @@
-export default function CaptureMetadata() {
-  return (
-    <div className="grid grid-cols-2 gap-4">
-      <div>
-        upload an image
-        <br />
-        upload an animation
-      </div>
+"use client";
 
+import { useEffect, useState } from "react";
+
+export default function CaptureMetadata() {
+  const [data, setData] = useState([0]);
+
+  useEffect(() => {
+    const maxExponent = 15;
+    const exponents = [];
+    for (let currentExponent = 0; currentExponent < maxExponent; currentExponent++) {
+      exponents.push(Math.pow(2, currentExponent));
+    }
+    console.log(exponents);
+    setData(exponents);
+  });
+
+  const renderOptions = () => {
+    const options = data.map(item => {
+      return <option>{item}</option>;
+    });
+    return options;
+  };
+
+  return (
+    <div className="grid grid-cols-1 gap-4">
       <div>
         <div className="md:container md:mx-auto">
           <h3>Metadata</h3>
           <p>Your NFT will need on and off chain metadata. Please fill out the info below</p>
           <form className="space-y-4">
+            <select className="select select-bordered w-full max-w-xs">
+              <option disabled selected>
+                Type of NFT
+              </option>
+              <option>Single</option>
+              <option>Limited Edition</option>
+              <option>Mutable Edition</option>
+            </select>
+
+            <select className="select select-bordered w-full max-w-xs">
+              <option disabled selected>
+                Max NFT in Collection
+              </option>
+              {renderOptions()}
+            </select>
+
             <div>
               <label className="input input-bordered flex items-center gap-2">
                 <div>
