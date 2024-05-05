@@ -1,47 +1,61 @@
 "use client";
 
+import { useState } from "react";
+
 import CaptureCollection from "@/components/nft/captureCollection";
 import CaptureGeneral from "@/components/nft/captureGeneral";
 import CaptureMetadata from "@/components/nft/captureMetadata";
-import { useState } from "react";
 
 export default function Page() {
-  const [selected, setSelectedTab] = useState(3)
+  const [selected, setSelectedTab] = useState(3);
   const renderGrid = () => {
     return (
       <div>
         <div role="tablist" className="tabs tabs-boxed">
-        <a role="tab" className={`tab ${selected == 3 ? 'tab-active' : ''}`} onClick={() => setSelectedTab(3)}>
+          <a
+            role="tab"
+            className={`tab ${selected == 3 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(3)}
+          >
             General
           </a>
-        <a role="tab" className={`tab ${selected == 1 ? 'tab-active' : ''}`} onClick={() => setSelectedTab(1)}>
+          <a
+            role="tab"
+            className={`tab ${selected == 1 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(1)}
+          >
             Collection
           </a>
-          <a role="tab" className={`tab ${selected == 0 ? 'tab-active' : ''}`} onClick={() => setSelectedTab(0)}>
+          <a
+            role="tab"
+            className={`tab ${selected == 0 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(0)}
+          >
             Metadata
-          </a> 
-          <a role="tab" className={`tab ${selected == 2 ? 'tab-active' : ''}`} onClick={() => setSelectedTab(2)}>
+          </a>
+          <a
+            role="tab"
+            className={`tab ${selected == 2 ? "tab-active" : ""}`}
+            onClick={() => setSelectedTab(2)}
+          >
             Mint
           </a>
         </div>
         {/* metadata */}
-        <div className={`container mx-auto ${selected == 0 ? '' : 'hidden'}`}>
+        <div className={`container mx-auto ${selected == 0 ? "" : "hidden"}`}>
           <CaptureMetadata />
-          
         </div>
-         {/* collection */}
-         <div className={`container mx-auto ${selected == 1 ? '' : 'hidden'}`}>
+        {/* collection */}
+        <div className={`container mx-auto ${selected == 1 ? "" : "hidden"}`}>
           <CaptureCollection />
-          </div>
-         {/* mint */}
-         <div className={`container mx-auto ${selected == 2 ? '' : 'hidden'}`}>
-          mint
-          </div>
+        </div>
+        {/* mint */}
+        <div className={`container mx-auto ${selected == 2 ? "" : "hidden"}`}>mint</div>
 
-           {/* general */}
-         <div className={`container mx-auto ${selected == 3 ? '' : 'hidden'}`}>
+        {/* general */}
+        <div className={`container mx-auto ${selected == 3 ? "" : "hidden"}`}>
           <CaptureGeneral />
-          </div>
+        </div>
         {/* <Typography variant="h3" gutterBottom textAlign={"left"}>
               Create a NFT
             </Typography>
