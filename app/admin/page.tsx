@@ -5,6 +5,7 @@ import { useState } from "react";
 import CaptureCollection from "@/components/nft/captureCollection";
 import CaptureGeneral from "@/components/nft/captureGeneral";
 import CaptureMetadata from "@/components/nft/captureMetadata";
+import CaptureMint from "@/components/nft/captureMint";
 
 export default function Page() {
   const [selected, setSelectedTab] = useState(3);
@@ -24,15 +25,15 @@ export default function Page() {
             className={`tab ${selected == 1 ? "tab-active" : ""}`}
             onClick={() => setSelectedTab(1)}
           >
-            Collection
+            Collection NFT
           </a>
-          <a
+          {/* <a
             role="tab"
             className={`tab ${selected == 0 ? "tab-active" : ""}`}
             onClick={() => setSelectedTab(0)}
           >
-            Metadata
-          </a>
+            NFT Metadata
+          </a> */}
           <a
             role="tab"
             className={`tab ${selected == 2 ? "tab-active" : ""}`}
@@ -50,7 +51,9 @@ export default function Page() {
           <CaptureCollection />
         </div>
         {/* mint */}
-        <div className={`container mx-auto ${selected == 2 ? "" : "hidden"}`}>mint</div>
+        <div className={`container mx-auto ${selected == 2 ? "" : "hidden"}`}>
+          <CaptureMint />
+        </div>
 
         {/* general */}
         <div className={`container mx-auto ${selected == 3 ? "" : "hidden"}`}>
