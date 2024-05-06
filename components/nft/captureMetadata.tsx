@@ -1,19 +1,4 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 export default function CaptureMetadata() {
-  const [data, setData] = useState([0]);
-
- 
-
-  const renderOptions = () => {
-    const options = data.map(item => {
-      return <option>{item}</option>;
-    });
-    return options;
-  };
-
   return (
     <div className="grid grid-cols-1 gap-4">
       <div>
@@ -34,7 +19,6 @@ export default function CaptureMetadata() {
               <option disabled selected>
                 Max NFT in Collection
               </option>
-              {renderOptions()}
             </select>
 
             <div>

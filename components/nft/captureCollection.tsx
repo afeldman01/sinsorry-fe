@@ -19,14 +19,14 @@ export default function CaptureCollection() {
             <div>
               <label className="input input-bordered flex items-center gap-2">
                 <div>
-                  <input type="text" className="grow " placeholder="Name" />{" "}
+                  <input type="text" className="grow " placeholder="Name" />
                 </div>
               </label>
             </div>
             <div>
               <label className="input input-bordered flex items-center gap-2">
                 <div>
-                  <input type="text" className="grow " placeholder="Symbol" />{" "}
+                  <input type="text" className="grow " placeholder="Symbol" />
                 </div>
               </label>
             </div>
@@ -38,21 +38,37 @@ export default function CaptureCollection() {
                     placeholder="Description"
                     rows={3}
                     cols={100}
-                  ></textarea>{" "}
+                  ></textarea>
                 </div>
               </label>
             </div>
             <div>
               <label className="input input-bordered flex items-center gap-2">
                 <div>
-                  <input type="text" className="grow " placeholder="Website" />{" "}
+                  <input type="text" className="grow " placeholder="Website" />
                 </div>
               </label>
             </div>
             <div>
-              <label className="input input-bordered flex items-center gap-2">
+              Metadata
+              <br />
+              <label className=" flex items-center gap-2">
                 <div>
-                  <input type="text" className="grow " placeholder="Off chain metadata" />{" "}
+                  <textarea
+                    className="w-full textarea textarea-bordered"
+                    placeholder="Description"
+                    rows={10}
+                    cols={100}
+                    value={`
+                    {
+                        name: "",
+                        symbol: "",
+                        description: "",
+                        image: "",
+                        animation_url: "",
+                        external_url: ""
+                    }`}
+                  ></textarea>
                 </div>
               </label>
             </div>
