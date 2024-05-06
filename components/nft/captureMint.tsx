@@ -5,14 +5,14 @@ export default function CaptureMint() {
   const [data, setData] = useState([] as number[]);
 
   useEffect(() => {
-    if(!data.length){ 
-        const maxExponent = 15;
-        const exponents = [];
-        for (let currentExponent = 0; currentExponent < maxExponent; currentExponent++) {
+    if (!data.length) {
+      const maxExponent = 15;
+      const exponents = [];
+      for (let currentExponent = 0; currentExponent < maxExponent; currentExponent++) {
         exponents.push(Math.pow(2, currentExponent));
-        }
-        console.log(exponents);
-        setData(exponents);
+      }
+      console.log(exponents);
+      setData(exponents);
     }
   }, []);
 
